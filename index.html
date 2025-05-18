@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2, h3 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .two-columns {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .col {
+      flex: 1;
+      min-width: 350px;
+    }
+    .signature-section {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="text-align: center;">
+    <table>
+        <tr>
+    <td><img src="./logo.jpg" alt="School Logo" style="height: 100px;"></td><br>
+    <td><h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GOVT. BOYS SEC. SCHOOL</h2>
+    <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 5-B NORTH KARACHI</h3>
+    <h2>&nbsp &nbsp &nbsp &nbsp &nbsp ADMISSION FORM</h2>
+    </td>
+    <td><label for="photo">Upload Student Photo:</label><br />
+    <input type="file" id="photo" name="photo" accept="image/*"><br />
+    </td>
+    </tr>
+    </table>
+  </div>
+  
+  <form>
+
+    <!-- Office Use -->
+    <div class="two-columns">
+      <div class="col">
+        <label for="grno" >G.R. No.</label>
+        <input type="text" style="width: 150px;" placeholder="To be filled by the office" id="grno" name="grno">
+      </div>
+      <div >
+        <label for="class" >Class</label>
+        <input type="text" style="width: 150px;" id="class" name="class">
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+    <h2 style="display: inline-block; background-color: #000000; color: aliceblue; font-size: 2em; font-family: sans-serif; padding: 8px 16px;">
+    PARTICULARS OF THE STUDENT
+    </h2>
+    </div>
+    
+    <label for="student_name">Student’s Name</label>
+    <input type="text" id="student_name" name="student_name" required>
+
+    <label for="father_name">Father/Guardian’s Name</label>
+    <input type="text" id="father_name" name="father_name" required>
+
+    <label for="dob_fig">Date of Birth (in figures)</label>
+    <input type="date" id="dob_fig" name="dob_fig">
+
+    <label for="dob_words">Date of Birth (in words)</label>
+    <input type="text" id="dob_words" name="dob_words">
+
+    <div class="two-columns">
+      <div class="col">
+        <label for="place_birth">Place of Birth</label>
+        <input type="text" id="place_birth" name="place_birth">
+      </div>
+      <div class="col">
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality">
+      </div>
+    </div>
+
+    <label for="religion">Religion</label>
+    <input type="text" id="religion" name="religion">
+
+    <label for="last_school">Last School Attended</label>
+    <input type="text" id="last_school" name="last_school">
+
+    <label for="class_applied">Class in Which Admission Sought</label>
+    <input type="text" id="class_applied" name="class_applied">
+
+    <div style="text-align: center;">
+    <h2 style="display: inline-block; background-color: #000000; color: aliceblue; font-size: 2em; font-family: sans-serif; padding: 8px 16px;">
+    PARTICULARS OF FATHER/GUARDIAN
+    </h2>
+    </div>
+
+    <label for="guardian_name">Full Name</label>
+    <input type="text" id="guardian_name" name="guardian_name">
+
+    <label for="cnic">C.N.I.C. No.</label>
+    <input type="text" id="cnic" name="cnic">
+
+    <div class="two-columns">
+      <div class="col">
+        <label for="occupation">Occupation</label>
+        <input type="text" id="occupation" name="occupation">
+      </div>
+      <div class="col">
+        <label for="department">Department/Office</label>
+        <input type="text" id="department" name="department">
+      </div>
+    </div>
+
+    <label for="relationship">Guardian’s Relationship with Student</label>
+    <input type="text" id="relationship" name="relationship">
+
+    <label for="address">Permanent Address</label>
+    <textarea id="address" name="address" rows="3"></textarea>
+
+    <div class="two-columns">
+      <div class="col">
+        <label for="telephone">Telephone Number</label>
+        <input type="tel" id="telephone" name="telephone">
+      </div>
+      <div class="col">
+        <label for="mobile">Mobile No.</label>
+        <input type="tel" id="mobile" name="mobile">
+      </div>
+    </div>
+
+    <h3>UNDERTAKING</h3>
+
+    <p>
+      I declare that the statement and particulars given above are correct to the best of my knowledge and I hereby
+      agree to abide by all the rules and regulations made for the administration.
+    </p>
+
+    <div class="signature-section">
+      <div>
+        ___________________________<br>
+        Signature of Parent/Guardian
+      </div>
+      <div>
+        ___________________________<br>
+        Signature of Head Master/Mistress
+      </div>
+    </div>
+
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
