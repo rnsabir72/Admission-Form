@@ -1,0 +1,152 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 5px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  text-align: center;
+}
+
+h1 {
+    text-align: center;
+  }
+
+ .student h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row  {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.row img {
+      height: 80px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    .row input[type="text"] {
+      padding: 8px;
+      font-size: 1em;
+      width: 200px;
+      margin-left: 20%;
+    }
+
+    .photo{
+      border: 1px solid #007bff;
+      padding: 40px 10px;
+      width: 15%;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+   }
+
+/* Two-column layout */
+.two-columns {
+  display: flex;
+  gap: 65%;
+  justify-content: space-between;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.pnr {
+  display: flex;
+  justify-content: space-between;
+  } 
+
+.pnr input[type="text"] {
+      padding: 4px;               /* increase inner space */
+      font-size: 10px;             /* increase text size */
+      height: 35px;                /* increase height */
+      width: 100%;                 /* full width of parent */
+      border: 1px solid #000000;
+      border-radius: 4px;
+      box-sizing: border-box;      /* ensures padding doesn't break layout */
+    }
+ 
+  .pnr > div {
+  flex: 1; /* ensures each input container takes equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Sections */
+  .data1 {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+  /* .signature-section div {
+  flex: 1 1 250px;
+  text-align: center;
+} */
+
+/* Buttons */
+  input[type="submit"],
+  input[type="reset"] {
+  padding: 10px 20px;
+  margin: 1rem 10px 2rem 0;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+  background-color: #005fa3;
+}
+
+p {
+  text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .row, .signature-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  

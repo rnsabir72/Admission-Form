@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  
+  <div class="row">
+   <img src="./logo.jpg" alt="School Logo" style="height: 160px;">
+   <h1>&nbspGOVT. BOYS SEC. SCHOOL<br />5-B NORTH KARACHI</h1>
+   <div class="photo"><br /><label for="photo">Upload Student Photo:</label>
+   <input type="file" id="photo" name="photo" accept="image/*">
+   </div>
+   </div>
+   <h1>ADMISSION FORM</h1>
+   
+   
+    <!-- Office Use -->
+    <div class="two-columns">
+      <div>
+        <label for="grno" >G.R. No.</label>
+        <input type="text" style="width: 250px;" placeholder="To be filled by the office" id="grno" name="grno">
+      </div>
+      <div >
+        <label for="class" >Class</label>
+        <input type="text" style="width: 200px;" id="class" name="class">
+      </div>
+    </div>
+
+    <br />
+    <div class="student">
+    <h1>PARTICULARS OF THE STUDENT</h1>
+    </div>
+     
+    <div class="data1">
+      <label for="student_name">Student’s Name</label>
+      <input type="text" id="student_name" name="student_name" required><br />
+    
+      <label for="father_name">Father/Guardian’s Name</label>
+      <input type="text" id="father_name" name="father_name" required>
+    
+     
+      <label for="dob_fig">Date of Birth (in figures)</label>
+      <input type="date" id="dateob" name="dateob"><br />
+     
+      <label for="dob_words">Date of Birth (in words)</label>
+      <input type="text" id="dob_words" name="dob_words">
+     
+    <div class="pnr">
+      <div>
+        <label for="place_birth">Place of Birth</label>
+        <input type="text" id="place_birth" name="place_birth">
+      </div>
+      <div>
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality">
+      </div>
+      <div>
+        <label for="religion">Religion</label>
+        <input type="text" id="religion" name="religion">
+      </div>
+    </div>
+    <label for="last_school">Last School Attended</label>
+    <input type="text" id="last_school" name="last_school">
+
+    <label for="class_applied">Class in Which Admission Sought</label>
+    <input type="text" id="class_applied" name="class_applied">
+    </div>
+
+    <div class="student">
+    <h1>PARTICULARS OF FATHER/GUARDIAN</h1>
+    </div>
+
+    <div class="data1">
+    <label for="guardian_name">Full Name</label>
+    <input type="text" id="guardian_name" name="guardian_name">
+
+    <label for="cnic">C.N.I.C. No.</label>
+    <input type="text" id="cnic" name="cnic">
+
+    <div class="pnr">
+      <div>
+        <label for="occupation">Occupation</label>
+        <input type="text" id="occupation" name="occupation">
+      </div>
+      <div>
+        <label for="department">Department/Office</label>
+        <input type="text" id="department" name="department">
+      </div>
+    </div>
+    
+
+    <label for="relationship">Guardian’s Relationship with Student</label>
+    <input type="text" id="relationship" name="relationship">
+
+    <div class="pnr">
+      <div>
+        <label for="telephone">Telephone Number</label>
+        <input type="tel" id="telephone" name="telephone">
+      </div>
+      <div>
+        <label for="mobile">Mobile No.</label>
+        <input type="tel" id="mobile" name="mobile">
+      </div>
+    </div>
+    <br />
+    <label for="address">Permanent Address</label>
+    <textarea id="address" name="address" rows="3" ></textarea>
+</div>
+    
+<div class="student">
+  <h1>UNDERTAKING</h1>
+</div>
+    <p>
+      I declare that the statement and particulars given above are correct to the best of my knowledge and I hereby
+      agree to abide by all the rules and regulations made for the administration.
+    </p>
+    <br />
+    <div class="signature-section">
+      <div>
+        ___________________________<br>
+        Signature of Parent/Guardian
+      </div>
+      <div>
+        ___________________________<br>
+        Signature of Head Master/Mistress
+      </div>
+    </div>
+
+    <br /><br />
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</body>
+</html>
